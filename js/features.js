@@ -365,20 +365,6 @@ function savePredictionToHistory(data, symptoms) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 async function predictDisease() {
     const checkboxes = document.querySelectorAll(
         "#symptomList input[type='checkbox']:checked"
@@ -404,7 +390,7 @@ async function predictDisease() {
 
     try {
         const response = await fetch(
-            "http://127.0.0.1:5000/api/predict",
+            "https://medintelai-bz8y.onrender.com/api/predict",
             {
                 method: "POST",
                 headers: {
@@ -575,7 +561,7 @@ async function sendMessage() {
 
     try {
         const response = await fetch(
-            "http://127.0.0.1:5000/api/health-assistant",
+            "https://medintelai-bz8y.onrender.com/api/health-assistant",
             {
                 method: "POST",
                 headers: {
