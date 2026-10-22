@@ -1251,5 +1251,12 @@ out center tags;
 
     renderHistory();
 })();
+// Connect the Predict Disease button
+document.addEventListener("DOMContentLoaded", () => {
+    const predictButton = document.getElementById("predictButton");
 
+    if (predictButton) {
+        predictButton.addEventListener("click", predictDisease);
+    }
+});
 
