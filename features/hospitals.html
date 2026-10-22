@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Hospitals | MedIntel AI</title>
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+<body>
+
+<header class="feature-header">
+    <a href="../dashboard.html" class="back-btn">← Back to Dashboard</a>
+    <div class="header-title">
+        <h1>MedIntel AI</h1>
+        <p>Nearby Hospitals</p>
+    </div>
+</header>
+
+<main class="feature-container">
+    <section class="feature-hero">
+        <h2>🏥 Nearby Hospitals</h2>
+        <p>Search for hospitals and healthcare facilities by city or area.</p>
+    </section>
+
+    <div class="disclaimer">
+        Hospital listings are provided by OpenStreetMap contributors.
+        Information may be incomplete or outdated. For emergencies,
+        contact your local emergency services.
+    </div>
+
+    <section class="card">
+        <h3>Find Hospitals</h3>
+
+        <form id="hospitalSearchForm">
+            <div class="form-group">
+                <label for="hospitalLocation">City or Area</label>
+                <input
+                    type="text"
+                    id="hospitalLocation"
+                    class="form-control"
+                    placeholder="Example: Gachibowli, Hyderabad"
+                    autocomplete="address-level2"
+                    required>
+            </div>
+
+            <button type="submit" class="primary-btn" id="hospitalSearchButton">
+                📍 Search Hospitals
+            </button>
+        </form>
+
+        <p id="hospitalStatus" role="status" aria-live="polite">
+            Enter a city or area to find healthcare facilities.
+        </p>
+    </section>
+
+    <section class="card">
+        <h3>Hospital Search Results</h3>
+        <div id="hospitalResults">
+            <p class="empty-state">Your search results will appear here.</p>
+        </div>
+    </section>
+</main>
+
+<script src="../js/features.js"></script>
+</body>
+</html>

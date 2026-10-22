@@ -1,0 +1,5 @@
+,Accuracy,Precision,Recall,F1_Score
+Random Forest,1.0,1.0,1.0,1.0
+Naive Bayes,1.0,1.0,1.0,1.0
+KNN,1.0,1.0,1.0,1.0
+Decision Tree,0.8536585365853658,0.822897743629451,0.8536585365853658,0.8210178236397748

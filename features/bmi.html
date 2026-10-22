@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BMI Calculator | MedIntel AI</title>
+
+    <link rel="stylesheet" href="../css/features.css">
+
+</head>
+
+<body>
+
+<header class="feature-header">
+
+    <a href="../dashboard.html" class="back-btn">
+        ← Back to Dashboard
+    </a>
+
+    <div class="header-title">
+
+        <h1>MedIntel AI</h1>
+
+        <p>BMI Calculator</p>
+
+    </div>
+
+</header>
+
+
+<main class="feature-container">
+
+    <section class="feature-hero">
+
+        <h2>⚖️ BMI Calculator</h2>
+
+        <p>
+            Calculate your Body Mass Index using your height and weight.
+        </p>
+
+    </section>
+
+
+    <div class="disclaimer">
+
+        BMI is a general health indicator and does not provide
+        a medical diagnosis.
+
+    </div>
+
+
+    <section class="card">
+
+        <h3>Enter Your Details</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label for="height">
+                    Height (cm)
+                </label>
+
+                <input
+                    type="number"
+                    id="height"
+                    class="form-control"
+                    placeholder="Example: 170">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="weight">
+                    Weight (kg)
+                </label>
+
+                <input
+                    type="number"
+                    id="weight"
+                    class="form-control"
+                    placeholder="Example: 65">
+
+            </div>
+
+        </div>
+
+
+        <button
+            class="primary-btn"
+            onclick="calculateBMI()">
+
+            Calculate BMI
+
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h3>Your BMI</h3>
+
+        <div class="bmi-circle">
+
+            <span id="bmiResult">
+                --
+            </span>
+
+        </div>
+
+
+        <div class="result-box">
+
+            <strong>Category:</strong>
+
+            <p id="bmiCategory">
+                Enter your details and calculate your BMI.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/features.js"></script>
+
+</body>
+</html>

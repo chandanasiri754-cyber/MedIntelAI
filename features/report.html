@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Report | MedIntel AI</title>
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+<body>
+
+<header class="feature-header">
+    <a href="../dashboard.html" class="back-btn">← Back to Dashboard</a>
+    <div class="header-title">
+        <h1>MedIntel AI</h1>
+        <p>Health Report</p>
+    </div>
+</header>
+
+<main class="feature-container">
+
+    <section class="feature-hero">
+        <h2>📄 Health Report</h2>
+        <p>Review your available health information and download a PDF summary.</p>
+    </section>
+
+    <section class="card">
+        <h3>Patient Information</h3>
+
+        <div class="report-section">
+            <label for="patientName">Name</label>
+            <input id="patientName" type="text" maxlength="100"
+                   value="User" required>
+
+            <label for="patientAge">Age</label>
+            <input id="patientAge" type="number" min="1" max="120"
+                   placeholder="Enter age (optional)">
+
+            <label for="patientGender">Gender (optional)</label>
+            <select id="patientGender">
+                <option value="">Prefer not to say</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="card">
+        <h3>Latest Prediction</h3>
+        <div class="report-section">
+            <div class="report-row">
+                <span>Top Prediction</span>
+                <strong id="latestPrediction">No prediction available</strong>
+            </div>
+            <div class="report-row">
+                <span>Model Probability Estimate</span>
+                <strong id="latestProbability">--</strong>
+            </div>
+            <div class="report-row">
+                <span>Recorded Symptoms</span>
+                <strong id="reportSymptoms">--</strong>
+            </div>
+        </div>
+        <p>Prediction information is taken from this browser's saved history.</p>
+    </section>
+
+    <section class="card">
+        <h3>Health Information</h3>
+        <div class="report-section">
+            <label for="reportBMI">BMI (optional)</label>
+            <input id="reportBMI" type="number" min="1" max="100"
+                   step="0.1" placeholder="Enter your calculated BMI">
+
+            <label for="reportBMICategory">BMI category (optional)</label>
+            <input id="reportBMICategory" type="text" maxlength="60"
+                   placeholder="e.g. Normal weight">
+
+            <label for="reportWater">Estimated daily water intake (optional)</label>
+            <input id="reportWater" type="text" maxlength="60"
+                   placeholder="e.g. 2.5 litres/day">
+        </div>
+    </section>
+
+    <section class="card">
+        <button type="button" id="generateReportButton" class="primary-btn">
+            📄 Generate Health Report PDF
+        </button>
+        <p id="reportStatus" role="status" aria-live="polite"></p>
+    </section>
+
+    <p class="disclaimer">
+        This report is for educational purposes only. ML predictions are not
+        confirmed diagnoses and do not replace professional medical advice.
+    </p>
+
+</main>
+
+<script src="../js/health-report.js"></script>
+</body>
+</html>

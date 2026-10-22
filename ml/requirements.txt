@@ -1,0 +1,11 @@
+
+Flask
+flask-cors
+google-genai
+reportlab
+gunicorn
+scikit-learn
+pandas
+numpy
+joblib
+Pillow

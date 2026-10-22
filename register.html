@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>MedIntel AI - Register</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+<div class="auth-container">
+
+    <div class="auth-card">
+
+        <div class="logo-circle">
+            🩺
+        </div>
+
+        <h1>MedIntel AI</h1>
+
+        <p class="tagline">
+            Smarter Health. Brighter Tomorrow.
+        </p>
+
+        <h2>Create Account</h2>
+
+
+        <form id="registerForm">
+
+            <label for="registerName">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="registerName"
+                placeholder="Enter your full name"
+                required>
+
+
+            <label for="registerEmail">
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="registerEmail"
+                placeholder="Enter your email"
+                required>
+
+
+            <label for="registerPassword">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="registerPassword"
+                placeholder="Minimum 6 characters"
+                required>
+
+
+            <label for="confirmPassword">
+                Confirm Password
+            </label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm your password"
+                required>
+
+
+            <button
+                type="submit"
+                class="btn">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+
+        <p
+            id="registerMessage"
+            class="message">
+        </p>
+
+
+        <p class="auth-link">
+
+            Already have an account?
+
+            <a href="index.html">
+                Login
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<script type="module" src="js/auth.js"></script>
+
+</body>
+
+</html>

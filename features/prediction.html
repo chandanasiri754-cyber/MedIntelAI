@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Disease Prediction | MedIntel AI</title>
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+<body>
+
+<div class="feature-page">
+    <header class="feature-header">
+        <a href="../dashboard.html" class="back-btn">
+            ← Back to Dashboard
+        </a>
+
+        <div class="header-title">
+            <h1>MedIntel AI</h1>
+            <p>Disease Prediction</p>
+        </div>
+    </header>
+
+    <main class="feature-container">
+        <section class="feature-hero">
+            <h2>🩺 Disease Prediction</h2>
+            <p>
+                Select your symptoms to view the top three
+                model-based probable conditions.
+            </p>
+        </section>
+
+        <div class="disclaimer">
+            <strong>Important:</strong>
+            This tool provides preliminary model-based predictions
+            for health awareness. It is not a diagnosis and does not
+            replace professional medical advice.
+        </div>
+
+        <section class="card">
+            <h3>Patient Information (Optional)</h3>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input
+                        type="number"
+                        id="age"
+                        class="form-control"
+                        min="1"
+                        max="120"
+                        placeholder="Enter age">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" class="form-control">
+                        <option value="">Prefer not to say</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <p>
+                Age and gender are not used by the current prediction model.
+            </p>
+        </section>
+
+        <section class="card">
+            <h3>Select Symptoms</h3>
+
+            <input
+                type="search"
+                id="symptomSearch"
+                class="form-control symptom-search"
+                placeholder="Search supported symptoms..."
+                autocomplete="off"
+                aria-label="Search symptoms">
+
+            <p id="symptomStatus" role="status" aria-live="polite">
+                Loading supported symptoms...
+            </p>
+
+            <div
+                id="symptomList"
+                class="symptom-list"
+                aria-label="Available symptoms">
+            </div>
+
+            <h3 style="margin-top: 25px;">Selected Symptoms</h3>
+
+            <div
+                id="selectedSymptoms"
+                class="selected-symptoms"
+                aria-live="polite">
+                No symptoms selected.
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Prediction Results</h3>
+
+            <button
+                type="button"
+                id="predictButton"
+                class="primary-btn">
+                🔍 Predict Disease
+            </button>
+
+            <div
+                id="predictionResults"
+                class="result-box"
+                style="margin-top: 20px;"
+                role="status"
+                aria-live="polite">
+                Select one or more symptoms and click Predict Disease.
+            </div>
+
+            <p>
+                Model probability estimates are not confirmed diagnoses
+                or clinically validated risk scores. Seek professional
+                care for medical concerns.
+            </p>
+        </section>
+    </main>
+</div>
+
+<script src="../js/features.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Water Intake | MedIntel AI</title>
+
+    <link rel="stylesheet" href="../css/features.css">
+
+</head>
+
+<body>
+
+<header class="feature-header">
+
+    <a href="../dashboard.html" class="back-btn">
+        ← Back to Dashboard
+    </a>
+
+    <div class="header-title">
+
+        <h1>MedIntel AI</h1>
+
+        <p>Water Intake</p>
+
+    </div>
+
+</header>
+
+
+<main class="feature-container">
+
+    <section class="feature-hero">
+
+        <h2>💧 Water Intake Calculator</h2>
+
+        <p>
+            Estimate your general daily water requirement.
+        </p>
+
+    </section>
+
+
+    <div class="disclaimer">
+
+        This is a general estimate. Individual water requirements
+        can vary depending on health, climate, activity and other factors.
+
+    </div>
+
+
+    <section class="card">
+
+        <h3>Your Details</h3>
+
+        <div class="form-group">
+
+            <label for="waterWeight">
+                Weight (kg)
+            </label>
+
+            <input
+                type="number"
+                id="waterWeight"
+                class="form-control"
+                placeholder="Enter your weight">
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="activityLevel">
+                Activity Level
+            </label>
+
+            <select
+                id="activityLevel"
+                class="form-control">
+
+                <option value="low">
+                    Low
+                </option>
+
+                <option value="moderate">
+                    Moderate
+                </option>
+
+                <option value="high">
+                    High
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            class="primary-btn"
+            onclick="calculateWater()">
+
+            Calculate
+
+        </button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h3>Daily Recommendation</h3>
+
+        <div class="result-box">
+
+            <div
+                id="waterResult"
+                class="result-value">
+
+                --
+
+            </div>
+
+            <p id="waterGlasses">
+                Enter your details to calculate an estimate.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/features.js"></script>
+
+</body>
+</html>

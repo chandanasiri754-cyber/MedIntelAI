@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction History | MedIntel AI</title>
+    <link rel="stylesheet" href="../css/features.css">
+</head>
+<body>
+
+<header class="feature-header">
+    <a href="../dashboard.html" class="back-btn">← Back to Dashboard</a>
+    <div class="header-title">
+        <h1>MedIntel AI</h1>
+        <p>Prediction History</p>
+    </div>
+</header>
+
+<main class="feature-container">
+    <section class="feature-hero">
+        <h2>📋 Prediction History</h2>
+        <p>Review your previous symptom prediction results.</p>
+    </section>
+
+    <div class="disclaimer">
+        These records contain experimental model predictions, not confirmed
+        diagnoses. History is stored locally in this browser.
+    </div>
+
+    <section class="card">
+        <h3>Previous Predictions</h3>
+
+        <p id="historyStatus" role="status" aria-live="polite"></p>
+
+        <div id="historyList">
+            <p class="empty-state">Loading prediction history...</p>
+        </div>
+
+        <button
+            type="button"
+            id="clearHistoryButton"
+            class="secondary-btn">
+            Clear All History
+        </button>
+    </section>
+</main>
+
+<script src="../js/features.js"></script>
+</body>
+</html>

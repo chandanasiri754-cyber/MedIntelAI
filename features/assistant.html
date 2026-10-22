@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Health Assistant | MedIntel AI</title>
+
+    <link rel="stylesheet" href="../css/features.css">
+
+</head>
+
+<body>
+
+<header class="feature-header">
+
+    <a href="../dashboard.html" class="back-btn">
+        ← Back to Dashboard
+    </a>
+
+    <div class="header-title">
+
+        <h1>MedIntel AI</h1>
+
+        <p>AI Health Assistant</p>
+
+    </div>
+
+</header>
+
+
+<main class="feature-container">
+
+    <section class="feature-hero">
+
+        <h2>🤖 AI Health Assistant</h2>
+
+        <p>
+            Ask general health-related questions.
+        </p>
+
+    </section>
+
+
+    <div class="disclaimer">
+
+        <strong>Important:</strong>
+        This assistant is intended for general health information.
+        It does not diagnose diseases or prescribe medication.
+
+    </div>
+
+
+    <section class="card chat-container">
+
+        <div
+            id="chatMessages"
+            class="chat-messages">
+
+            <div class="chat-message bot-message">
+
+                Hello! 👋 I'm the MedIntel AI health assistant.
+                How can I help you with general health information?
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="assistantInput"
+                class="form-control"
+                placeholder="Type your question..."
+                onkeydown="
+                    if(event.key === 'Enter') sendMessage();
+                ">
+
+            <button
+                class="primary-btn"
+                onclick="sendMessage()">
+
+                ➤
+
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/health-assistant.js"></script>
+
+</body>
+</html>

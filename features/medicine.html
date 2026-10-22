@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medicine Reminder | MedIntel AI</title>
+
+    <link rel="stylesheet" href="../css/features.css">
+
+</head>
+
+<body>
+
+<header class="feature-header">
+
+    <a href="../dashboard.html" class="back-btn">
+        ← Back to Dashboard
+    </a>
+
+    <div class="header-title">
+
+        <h1>MedIntel AI</h1>
+
+        <p>Medicine Reminder</p>
+
+    </div>
+
+</header>
+
+
+<main class="feature-container">
+
+    <section class="feature-hero">
+
+        <h2>💊 Medicine Reminder</h2>
+
+        <p>
+            Add your medication schedule and keep track of reminders.
+        </p>
+
+    </section>
+
+
+    <div class="disclaimer">
+
+        This feature only stores and displays medication reminders
+        entered by the user. It does not prescribe medication.
+
+    </div>
+
+
+    <section class="card">
+
+        <h3>Add Medicine</h3>
+
+        <div class="form-grid">
+
+            <div class="form-group">
+
+                <label for="medicineName">
+                    Medicine Name
+                </label>
+
+                <input
+                type="text"
+                id="medicineName"
+                class="form-control"
+                placeholder="Enter medicine name"
+                required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="dosage">
+                    Dosage
+                </label>
+
+                    <input
+                    type="text"
+                    id="dosage"
+                    class="form-control"
+                    placeholder="Enter prescribed dosage"
+                    required>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="medicineTime">
+                Reminder Time
+            </label>
+
+                <input
+                type="time"
+                id="medicineTime"
+                class="form-control"
+                required>
+
+        </div>
+
+                <button
+                type="button"
+                class="primary-btn"
+                id="addReminderButton">
+                + Add Reminder
+</button>
+
+    </section>
+
+
+    <section class="card">
+
+        <h3>Today's Reminders</h3>
+
+        <div id="reminderList">
+
+            <div class="empty-state">
+
+                No medicine reminders added yet.
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="../js/features.js"></script>
+
+</body>
+</html>
