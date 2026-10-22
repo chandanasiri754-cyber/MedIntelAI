@@ -30,6 +30,7 @@ from reportlab.platypus import (
 # CREATE FLASK APP AND CONFIGURE CORS
 # ============================================================
 
+
 app = Flask(__name__)
 
 CORS(
@@ -39,10 +40,12 @@ CORS(
             "origins": [
                 "http://localhost:8000",
                 "http://127.0.0.1:8000",
+                "https://silver-figolla-6465f9.netlify.app",
             ]
         }
     },
 )
+
 
 
 # ============================================================
